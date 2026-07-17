@@ -1,0 +1,188 @@
+Program 12.                   \documentclass[12pt]{report}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\begin{document}
+	
+%------------------ TITLE PAGE ------------------
+
+\begin{titlepage}
+\centering
+
+\vspace*{0.5cm}
+
+\LARGE{\bf VISVESVARAYA TECHNOLOGICAL UNIVERSITY}
+
+\vspace{1cm}
+
+\large{\textbf{GOVERNMENT ENGINEERING COLLEGE\\[0.2cm]
+HASSAN – 573201\\[0.3cm]}}
+
+\vspace{0.5cm}
+
+\textbf{DEPARTMENT OF COMPUTER SCIENCE \& ENGINEERING}\\[5cm]
+
+\textbf{\underline{\large Submitted By}}\\[0.3cm]
+
+\begin{tabular}{l c l}
+
+\textbf{Sindhu Raj} & \textbf{:} & \textbf{4GH21CS047}\\
+
+\end{tabular}
+
+\end{titlepage}
+
+	
+	\tableofcontents
+	\listoffigures
+	
+	%------------------ CHAPTER 1 ------------------
+
+\chapter{ Free Software}
+
+\section{What is Free Software?}
+
+The word free software refers to software that respects
+users' freedom and community. Roughly, it means that
+the users have the freedom to run, copy, distribute,
+study, change and improve the software.
+
+The term free software is sometimes misunderstood.
+The word free in free software refers to freedom,
+not price.
+
+\section{The Free Software Definition}
+
+The four essential freedoms are:
+
+\begin{itemize}
+\item The freedom to run the program as you wish,
+for any purpose. (Freedom 0)
+
+\item The freedom to study how the program works
+and change it so it does your computing as you wish.
+(Freedom 1)
+
+\item The freedom to redistribute copies so you can
+help others. (Freedom 2)
+
+\item The freedom to distribute copies of your
+modified versions to others. (Freedom 3)
+\end{itemize}
+
+By doing this, you can give the whole community
+a chance to benefit from your changes.
+
+%------------------ CHAPTER 2 ------------------
+
+\chapter{Listing Environment}
+
+\section{Unordered Lists}
+
+\subsection{Groceries List}
+
+\begin{itemize}
+\item Eggs
+\item Milk
+\item Biscuits
+\item Rice
+\end{itemize}
+
+\subsection{Football Teams}
+
+\begin{itemize}
+
+\item English Premier League
+
+\begin{itemize}
+\item Manchester United
+\item Liverpool
+\end{itemize}
+
+\item La Liga
+
+\begin{itemize}
+\item Barcelona
+\item Real Madrid
+\end{itemize}
+
+\item Bundesliga
+
+\begin{itemize}
+\item Bayern Munich
+\item Borussia Dortmund
+\end{itemize}
+
+\end{itemize}
+
+\section{Ordered Lists}
+
+\subsection{ICC WTC Rankings}
+
+\begin{enumerate}
+\item India
+\item Australia
+\item New Zealand
+\end{enumerate}
+
+\subsection{Countries Ranked by Market Cap}
+
+\begin{enumerate}
+
+\item Asia
+
+\begin{enumerate}
+\item China
+\item Japan
+\item India
+\end{enumerate}
+
+\item Europe
+
+\begin{enumerate}
+\item United Kingdom
+\item France
+\item Germany
+\end{enumerate}
+
+\end{enumerate}
+	
+	\chapter{Methods}
+	
+	\section[Method's section]{This is Method's section}
+		\subsection*{This is Method's subsection}
+	
+	\chapter{Results}
+	\addcontentsline{toc}{chapter}{Result's section}
+	This is the results section.
+	
+	\chapter*{snapshots}
+	\addcontentsline{toc}{chapter}{Snaps}
+	This is the Snapshot section.
+	
+	\begin{figure}[h]
+	
+		\begin{subfigure}{0.40\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{TeXworks.png}
+		\caption{TexWorks}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.40\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{vtu_logo.png}
+		\caption{Latex1}
+		\end{subfigure}
+		\caption{Latex and TeXWorks}
+		
+	\end{figure}
+	
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=4cm]{latex.png}
+	\caption{Latex}
+	\end{figure}
+	
+	\chapter{Conclusion}
+	This is the conclusion.
+\end{document}

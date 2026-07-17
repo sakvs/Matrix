@@ -1,0 +1,69 @@
+program 08 \documentclass[12pt]{article}
+
+% Package for mathematical symbols and theorem environments
+\usepackage{amsmath, amsthm, amssymb}
+
+% Define theorem-like environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+% Definition style
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\begin{document}
+
+\title{Presentation of Numbered Theorems, Definitions, Corollaries, and Lemmas}
+\author{}
+\date{}
+\maketitle
+
+\section{Mathematical Statements}
+
+\begin{definition}
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+
+\begin{theorem}
+Every prime number greater than 2 is an odd number.
+\end{theorem}
+
+\begin{proof}
+Assume that a prime number greater than 2 is even. Then it must be divisible by 2.
+
+Since it is greater than 2, it has at least three divisors: 1, 2, and itself.
+
+This contradicts the definition of a prime number, which must have exactly two positive divisors.
+
+Therefore, every prime number greater than 2 is odd.
+\end{proof}
+
+\begin{lemma}
+If an integer is divisible by 4, then it is also divisible by 2.
+\end{lemma}
+
+\begin{proof}
+Let the integer be \( n = 4k \), where \( k \) is an integer.
+
+Then,
+\[
+n = 4k = 2(2k)
+\]
+
+Since \( 2k \) is also an integer, \( n \) is divisible by 2.
+\end{proof}
+
+\begin{corollary}
+The number 16 is divisible by 2.
+\end{corollary}
+
+\begin{proof}
+Since \(16 = 4 \times 4\), it is divisible by 4.
+
+By the lemma, every number divisible by 4 is also divisible by 2.
+
+Hence, 16 is divisible by 2.
+\end{proof}
+
+\end{document}
